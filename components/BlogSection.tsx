@@ -15,7 +15,7 @@ const BlogSection: React.FC = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('http://localhost:3001/api/blog')
+    fetch('/.netlify/functions/blog')
       .then(r => r.json())
       .then(data => { setPosts(data.slice(0, 6)); setLoading(false); })
       .catch(() => setLoading(false));
