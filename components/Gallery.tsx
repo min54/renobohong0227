@@ -8,8 +8,8 @@ const Gallery: React.FC = () => {
 
   return (
     <section
-      className="relative w-full overflow-hidden"
-      style={{ height: '300px', minHeight: '240px' }}
+      className="relative w-full overflow-hidden flex items-center"
+      style={{ minHeight: 'clamp(300px, 40vw, 600px)' }}
     >
       {/* Background photo */}
       <img
@@ -24,7 +24,7 @@ const Gallery: React.FC = () => {
       <div className="absolute inset-0 bg-gradient-to-br from-violet-900/30 via-transparent to-transparent" />
 
       {/* Copy */}
-      <div className="relative h-full flex items-center">
+      <div className="relative w-full py-16">
         <div className="container mx-auto px-10 lg:px-20 max-w-6xl">
           <FadeIn direction="right" className="max-w-xl">
 

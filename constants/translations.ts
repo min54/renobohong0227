@@ -180,7 +180,39 @@ export const translations = {
 <details>
 <summary>눈 밑 필러와 어떻게 다른가요?</summary>
 <div class="answer"><p>필러는 즉각적인 볼륨 충전이 목적인 반면, 리쥬란 아이힐러는 피부 자체의 재생력을 높여 근본적인 개선을 도모합니다. 두 시술을 병행하면 볼륨과 피부 질 모두를 동시에 개선하는 최상의 결과를 얻을 수 있습니다.</p></div>
-</details>`, price: '' },
+</details>
+
+<h2>시술 전후 주의사항</h2>
+<p>안전하고 효과적인 재생을 위해 시술 후 아래 사항을 반드시 지켜주시기 바랍니다.</p>
+
+<h3>1. 시술 직후 반응 (정상적인 현상)</h3>
+<ul>
+<li><strong>엠보싱 현상:</strong> 주입된 약물로 인해 시술 부위가 올록볼록하게 올라올 수 있습니다. 이는 1~2일 내에 피부 속으로 흡수되며 자연스럽게 사라지므로 짜거나 누르지 마세요.</li>
+<li><strong>멍과 부기:</strong> 눈가는 피부가 얇고 혈관이 많아 미세한 멍이나 가벼운 부기가 발생할 수 있습니다. 보통 3~7일 이내에 완화됩니다.</li>
+</ul>
+
+<h3>2. 세안 및 메이크업</h3>
+<ul>
+<li><strong>당일 세안:</strong> 시술 6~8시간 후부터 가벼운 물세안이 가능합니다. 가급적 시술 당일은 피부가 쉴 수 있도록 해주세요.</li>
+<li><strong>메이크업:</strong> 다음 날부터 가능하지만, 눈가에 자극이 가는 진한 아이 메이크업이나 강한 클렌징은 3일 정도 피해주시는 것이 좋습니다.</li>
+</ul>
+
+<h3>3. 생활 습관 및 환경 관리</h3>
+<ul>
+<li><strong>열 자극 주의:</strong> 시술 후 일주일간은 사우나, 찜질방, 열탕 목욕 등 고온의 환경을 피해야 합니다. 열감은 재생 성분의 활성화를 방해할 수 있습니다.</li>
+<li><strong>자극 금지:</strong> 시술 부위를 손으로 자주 만지거나 강하게 문지르는 행위(경락 마사지 등)는 2주간 삼가주세요.</li>
+<li><strong>자외선 차단:</strong> 재생 중인 피부는 자외선에 민감할 수 있습니다. 외출 시 자외선 차단제를 꼼꼼히 바르고, 선글라스를 착용하는 것도 도움이 됩니다.</li>
+</ul>
+
+<h3>4. 금주 및 금연</h3>
+<p>염증 예방과 빠른 회복을 위해 최소 3~5일간은 음주와 흡연을 멀리해 주세요. 알코올은 혈관을 확장시켜 부기를 오래 가게 하고 재생 속도를 늦춥니다.</p>
+
+<h3>5. 보습 및 재생 관리</h3>
+<p>시술 후 피부가 일시적으로 건조하게 느껴질 수 있습니다. 수분 크림이나 재생 크림을 평소보다 충분히 발라주시면 시술 효과가 더욱 극대화됩니다.</p>
+
+<div style="border:1px solid #e2e8f0;border-radius:10px;padding:1rem 1.25rem;margin-top:0.5rem;">
+<p style="margin:0;font-size:0.875rem;color:#64748b;line-height:1.8;">시술 부위가 심하게 붉어지거나 통증·가려움증이 동반될 경우 즉시 내원해 주세요.</p>
+</div>`, price: '' },
                 3: { title: '쥬베룩', desc: `<div style="background:linear-gradient(135deg,#f5f3ff 0%,#ede9fe 100%);border-radius:20px;padding:1.5rem 1.75rem;margin-bottom:0.25rem;"><p style="margin:0;font-size:0.95rem;color:#4c1d95;line-height:1.9;font-weight:500;">PLLA(폴리-L-젖산)와 HA(히알루론산)의 혁신적인 복합 성분으로 즉각적인 볼륨과 장기적인 탄력을 동시에 선사하는 차세대 스킨 부스터입니다.</p></div>
 
 <h2>시술 원리</h2>
@@ -1436,7 +1468,39 @@ export const translations = {
 <details>
 <summary>How does it differ from under-eye filler?</summary>
 <div class="answer"><p>Fillers are designed for immediate volume restoration, while Rejuran Eye Healer boosts the skin's natural regenerative ability for fundamental improvement. Combining both treatments delivers optimal results for volume and skin quality simultaneously.</p></div>
-</details>`, price: '' },
+</details>
+
+<h2>Pre & Post-Treatment Instructions</h2>
+<p>Please follow the guidelines below carefully to ensure a safe and effective recovery.</p>
+
+<h3>1. Immediate Post-Treatment Reactions (Normal)</h3>
+<ul>
+<li><strong>Embossing effect:</strong> The injected solution may cause the skin to appear bumpy. This is absorbed within 1–2 days — do not squeeze or press the area.</li>
+<li><strong>Bruising & swelling:</strong> The eye area has thin skin and many blood vessels, so minor bruising or mild swelling may occur. This typically subsides within 3–7 days.</li>
+</ul>
+
+<h3>2. Cleansing & Makeup</h3>
+<ul>
+<li><strong>Cleansing:</strong> Gentle water cleansing is possible 6–8 hours after treatment. Let your skin rest as much as possible on the day of treatment.</li>
+<li><strong>Makeup:</strong> Resume the next day, but avoid heavy eye makeup or strong cleansing around the eye area for approximately 3 days.</li>
+</ul>
+
+<h3>3. Lifestyle & Environment</h3>
+<ul>
+<li><strong>Avoid heat:</strong> For one week post-treatment, avoid saunas, steam rooms, and hot baths. Heat can interfere with the activation of regenerative components.</li>
+<li><strong>No rubbing:</strong> Avoid frequently touching or vigorously rubbing the treated area (including facial massage) for 2 weeks.</li>
+<li><strong>Sun protection:</strong> Skin undergoing regeneration is more sensitive to UV rays. Apply sunscreen thoroughly and consider wearing sunglasses when outdoors.</li>
+</ul>
+
+<h3>4. Alcohol & Smoking</h3>
+<p>Avoid alcohol and smoking for at least 3–5 days to prevent inflammation and support faster recovery. Alcohol dilates blood vessels, prolonging swelling and slowing regeneration.</p>
+
+<h3>5. Moisturizing & Aftercare</h3>
+<p>Your skin may feel temporarily dry after treatment. Applying a hydrating or recovery cream more generously than usual will help maximize treatment results.</p>
+
+<div style="border:1px solid #e2e8f0;border-radius:10px;padding:1rem 1.25rem;margin-top:0.5rem;">
+<p style="margin:0;font-size:0.875rem;color:#64748b;line-height:1.8;">If you experience severe redness, worsening pain, or itching at the treated site, please contact us immediately.</p>
+</div>`, price: '' },
                 3: { title: 'Juvelook', desc: `<div style="background:linear-gradient(135deg,#f5f3ff 0%,#ede9fe 100%);border-radius:20px;padding:1.5rem 1.75rem;margin-bottom:0.25rem;"><p style="margin:0;font-size:0.95rem;color:#4c1d95;line-height:1.9;font-weight:500;">A next-generation skin booster combining PLLA (Poly-L-Lactic Acid) and HA (Hyaluronic Acid) for immediate volume and long-term elasticity in a single innovative treatment.</p></div>
 
 <h2>How It Works</h2>
@@ -2692,7 +2756,39 @@ export const translations = {
 <details>
 <summary>目の下のフィラーとどう違いますか？</summary>
 <div class="answer"><p>フィラーは即時のボリューム補充が目的ですが、リジュラン アイヒーラーは肌本来の再生力を高める根本的な改善を目指します。両方を組み合わせることで、ボリュームと肌質を同時に最適化できます。</p></div>
-</details>`, price: '' },
+</details>
+
+<h2>施術前後の注意事項</h2>
+<p>安全で効果的な再生のために、以下の事項を必ずお守りください。</p>
+
+<h3>1. 施術直後の反応（正常な現象）</h3>
+<ul>
+<li><strong>エンボッシング現象：</strong>注入した薬剤により施術部位が凸凹になることがあります。1〜2日以内に吸収されて自然に消えますので、絞ったり押したりしないでください。</li>
+<li><strong>内出血・むくみ：</strong>目元は皮膚が薄く血管が多いため、微細な内出血や軽いむくみが生じることがあります。通常3〜7日以内に改善します。</li>
+</ul>
+
+<h3>2. 洗顔・メイク</h3>
+<ul>
+<li><strong>当日の洗顔：</strong>施術6〜8時間後から軽い水洗いが可能です。できれば当日は肌を休ませてあげてください。</li>
+<li><strong>メイク：</strong>翌日から可能ですが、目元に刺激を与えるアイメイクや強いクレンジングは3日ほど控えることをお勧めします。</li>
+</ul>
+
+<h3>3. 生活習慣・環境管理</h3>
+<ul>
+<li><strong>熱刺激に注意：</strong>施術後1週間はサウナ・岩盤浴・熱いお風呂など高温の環境を避けてください。熱は再生成分の活性化を妨げる可能性があります。</li>
+<li><strong>刺激禁止：</strong>施術部位を頻繁に触ったり強くこする行為（マッサージ等）は2週間控えてください。</li>
+<li><strong>紫外線対策：</strong>再生中の肌は紫外線に敏感です。外出時は日焼け止めをしっかり塗り、サングラスの着用もお勧めします。</li>
+</ul>
+
+<h3>4. 禁酒・禁煙</h3>
+<p>炎症予防と早期回復のため、少なくとも3〜5日間は飲酒・喫煙をお控えください。アルコールは血管を拡張させてむくみを長引かせ、再生を遅らせます。</p>
+
+<h3>5. 保湿・ケア</h3>
+<p>施術後は一時的に肌が乾燥に感じることがあります。保湿クリームや再生クリームをいつもより十分に塗ることで、施術効果がさらに高まります。</p>
+
+<div style="border:1px solid #e2e8f0;border-radius:10px;padding:1rem 1.25rem;margin-top:0.5rem;">
+<p style="margin:0;font-size:0.875rem;color:#64748b;line-height:1.8;">施術部位がひどく赤くなったり、痛みや痒みが強くなった場合は、すぐにご連絡ください。</p>
+</div>`, price: '' },
                 3: { title: 'ジュベルック', desc: `<div style="background:linear-gradient(135deg,#f5f3ff 0%,#ede9fe 100%);border-radius:20px;padding:1.5rem 1.75rem;margin-bottom:0.25rem;"><p style="margin:0;font-size:0.95rem;color:#4c1d95;line-height:1.9;font-weight:500;">PLLA（ポリ乳酸）とHA（ヒアルロン酸）を組み合わせた次世代スキンブースター。即時ボリュームと長期的な弾力改善を1回の施術で実現します。</p></div>
 
 <h2>施術原理</h2>

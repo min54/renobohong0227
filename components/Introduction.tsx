@@ -6,11 +6,33 @@ const Introduction: React.FC = () => {
   const { t } = useLanguage();
 
   return (
-    <section id="about" className="bg-white overflow-hidden">
-      <div className="container mx-auto px-10 max-w-6xl py-24 lg:py-32">
+    <section id="about" className="relative bg-white overflow-hidden min-h-[680px] flex flex-col justify-center">
 
-        {/* 3열 그리드 */}
-        <div className="grid lg:grid-cols-3 gap-12 lg:gap-8 items-end mb-20">
+      {/* 배경 사진 - 오른쪽 절반 */}
+      <div className="absolute inset-0 pointer-events-none hidden lg:flex">
+        <div className="w-1/2"></div>
+        <div className="w-1/2 relative">
+          <img
+            src="/images/director_main.jpg"
+            alt="Director"
+            className="w-full h-full object-cover object-top"
+          />
+          {/* 왼쪽 페이드 */}
+          <div className="absolute inset-y-0 left-0 w-2/3 bg-gradient-to-r from-white to-transparent"></div>
+          {/* 상단 페이드 */}
+          <div className="absolute inset-x-0 top-0 h-1/4 bg-gradient-to-b from-white to-transparent"></div>
+          {/* 하단 페이드 */}
+          <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-white to-transparent"></div>
+          {/* 오른쪽 페이드 */}
+          <div className="absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-white to-transparent"></div>
+        </div>
+      </div>
+
+      {/* 콘텐츠 */}
+      <div className="relative z-10 container mx-auto px-10 max-w-6xl py-24 lg:py-32">
+
+        {/* 2열: 텍스트만 왼쪽에 */}
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-20">
 
           {/* 1열: 병원 소개 */}
           <div className="text-slate-900 space-y-8 animate-fade-in-up">
@@ -27,8 +49,8 @@ const Introduction: React.FC = () => {
             </p>
           </div>
 
-          {/* 2열: 원장님 소개 텍스트 */}
-          <div className="text-slate-900 space-y-8 animate-fade-in-up delay-100 lg:px-6">
+          {/* 2열: 원장님 소개 */}
+          <div className="text-slate-900 space-y-8 animate-fade-in-up delay-100">
             <div className="space-y-4">
               <p className="text-violet-500 font-bold tracking-[0.3em] text-xs uppercase">{t.intro.director.badge}</p>
               <h3 className="text-3xl lg:text-4xl font-bold text-slate-900 tracking-tight">{t.intro.director.name}</h3>
@@ -53,20 +75,6 @@ const Introduction: React.FC = () => {
                   </div>
                 ))}
               </div>
-            </div>
-          </div>
-
-          {/* 3열: 원장님 사진 */}
-          <div className="relative animate-fade-in-up delay-200">
-            <div className="relative overflow-hidden rounded-3xl">
-              <img
-                src="/images/director_main.jpg"
-                alt="Director"
-                className="w-full object-cover object-top"
-                style={{ maxHeight: '480px' }}
-              />
-              {/* 하단 페이드 */}
-              <div className="absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-t from-white to-transparent"></div>
             </div>
           </div>
 

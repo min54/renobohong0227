@@ -119,76 +119,78 @@ const Navigation: React.FC<NavigationProps> = ({ onOpenAdmin, onTreatmentSelect,
 
       {/* Mobile Menu Overlay */}
       {mobileMenuOpen && (
-        <div className="fixed inset-0 z-40 bg-white/98 backdrop-blur-xl pt-24 px-6 md:hidden animate-in fade-in slide-in-from-top duration-300">
-          <div className="flex flex-col gap-6 text-center max-h-[80vh] overflow-y-auto pb-10">
-            {navLinks.map((link) => (
-              <div key={link.name} className="flex flex-col">
-                <div
-                  className="flex items-center justify-center gap-2"
-                  onClick={() => link.href === '#services' && setMobileServicesOpen(!mobileServicesOpen)}
-                >
-                  <a
-                    href={link.href === '#services' ? undefined : link.href}
-                    className="text-xl font-medium text-slate-800 hover:text-violet-600 cursor-pointer"
-                    onClick={() => {
-                      if (link.isHome) onNavigateHome();
-                      if (link.isLocation) { onNavigateLocation(); setMobileMenuOpen(false); }
-                      if (link.href !== '#services') setMobileMenuOpen(false);
-                    }}
-                  >
-                    {link.name}
-                  </a>
-                  {link.href === '#services' && <ChevronDown size={20} className={`text-violet-600 transition-transform ${mobileServicesOpen ? 'rotate-180' : ''}`} />}
-                </div>
+        <div className="fixed inset-0 z-40 bg-slate-950 md:hidden flex flex-col">
 
-                {link.href === '#services' && mobileServicesOpen && (
-                  <div className="grid grid-cols-1 gap-2 mt-4 px-2 animate-in zoom-in-95 duration-200">
-                    {Object.entries(t.services.items).map(([key, item]: [string, any]) => (
-                      <button
-                        key={key}
-                        className="p-4 bg-violet-50 rounded-2xl text-[12px] text-violet-700 font-bold border border-violet-100 flex justify-between items-center active:bg-violet-100 transition-colors text-left w-full"
-                        onClick={() => { setMobileMenuOpen(false); onTreatmentSelect(key); }}
-                      >
-                        <span>{item.title}</span>
-                        <ChevronDown size={14} className="-rotate-90 text-violet-300" />
-                      </button>
-                    ))}
-                  </div>
-                )}
-              </div>
-            ))}
-
-            {/* Mobile Admin Link (Hidden/Secret) */}
-            <button
-              onClick={() => {
-                setMobileMenuOpen(false);
-                onOpenAdmin();
-              }}
-              className="text-xl font-medium opacity-0 cursor-default h-6"
-              aria-hidden="true"
-            >
-              Secret
+          {/* 헤더 */}
+          <div className="flex items-center justify-between px-6 pt-5 pb-4 border-b border-white/10">
+            <span className="text-white font-bold tracking-tighter text-lg">RENOVO <span className="text-violet-400">HONGDAE</span></span>
+            <button onClick={() => setMobileMenuOpen(false)} className="text-white/60 hover:text-white transition-colors">
+              <X size={24} />
             </button>
+          </div>
 
-            <div className="flex justify-center gap-3 pt-4">
+          {/* 언어 선택 */}
+          <div className="px-6 py-4 border-b border-white/10">
+            <p className="text-white/30 text-[10px] font-bold uppercase tracking-widest mb-3">Language</p>
+            <div className="flex gap-2">
               {(['KR', 'EN', 'JP'] as const).map((lang) => (
                 <button
                   key={lang}
-                  onClick={() => {
-                    setLanguage(lang);
-                    setMobileMenuOpen(false);
-                  }}
-                  className={`text-xs font-bold px-3 py-1 rounded border ${language === lang
-                    ? 'bg-violet-600 border-violet-600 text-white'
-                    : 'border-slate-200 text-slate-500 hover:border-violet-600'
-                    }`}
+                  onClick={() => setLanguage(lang)}
+                  className={`flex-1 py-2 rounded-xl text-sm font-bold transition-all ${
+                    language === lang
+                      ? 'bg-violet-500 text-white'
+                      : 'bg-white/5 text-white/40 hover:bg-white/10 hover:text-white'
+                  }`}
                 >
                   {lang}
                 </button>
               ))}
             </div>
-
           </div>
+
+          {/* 시술 리스트 */}
+          <div className="flex-1 overflow-y-auto px-6 py-5">
+            <p className="text-white/30 text-[10px] font-bold uppercase tracking-widest mb-4">{t.nav.services}</p>
+            <div className="grid grid-cols-2 gap-2.5">
+              {Object.entries(t.services.items).map(([key, item]: [string, any]) => (
+                <button
+                  key={key}
+                  onClick={() => { setMobileMenuOpen(false); onTreatmentSelect(key); }}
+                  className="p-4 bg-white/5 hover:bg-violet-500/20 border border-white/10 hover:border-violet-500/40 rounded-2xl text-left transition-all active:scale-95"
+                >
+                  <span className="text-white text-[13px] font-semibold leading-snug line-clamp-2">{item.title}</span>
+                </button>
+              ))}
+            </div>
+          </div>
+
+          {/* 하단 링크 */}
+          <div className="px-6 py-5 border-t border-white/10 flex gap-3">
+            <button
+              onClick={() => { onNavigateHome(); setMobileMenuOpen(false); }}
+              className="flex-1 py-3 rounded-2xl bg-white/5 text-white/60 text-sm font-medium hover:bg-white/10 transition-colors"
+            >
+              {t.nav.about}
+            </button>
+            <button
+              onClick={() => { onNavigateLocation(); setMobileMenuOpen(false); }}
+              className="flex-1 py-3 rounded-2xl bg-white/5 text-white/60 text-sm font-medium hover:bg-white/10 transition-colors"
+            >
+              {t.nav.contact}
+            </button>
+            <a
+              href="#reservation"
+              onClick={() => setMobileMenuOpen(false)}
+              className="flex-1 py-3 rounded-2xl bg-violet-500 text-white text-sm font-bold text-center hover:bg-violet-600 transition-colors"
+            >
+              {t.nav.book}
+            </a>
+          </div>
+
+          {/* 히든 어드민 */}
+          <button onClick={() => { setMobileMenuOpen(false); onOpenAdmin(); }} className="opacity-0 h-0 overflow-hidden" aria-hidden="true" />
+
         </div>
       )}
     </nav>
