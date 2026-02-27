@@ -11,6 +11,8 @@ import Specialization from './components/Specialization';
 import LocationPage from './components/LocationPage';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import YoutubeSection from './components/YoutubeSection';
+import BlogSection from './components/BlogSection';
 import Admin from './components/Admin';
 
 function App() {
@@ -62,6 +64,8 @@ function App() {
               <TreatmentList onTreatmentSelect={handleTreatmentSelect} />
               <Gallery />
               <Specialization />
+              <YoutubeSection />
+              <BlogSection />
               <Contact />
             </>
           )}

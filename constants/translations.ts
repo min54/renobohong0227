@@ -1197,7 +1197,7 @@ export const translations = {
             title: '오시는 길 & 진료 문의',
             subtitle: '편안한 상담을 위해 예약 후 방문 부탁드립니다.',
             addressTitle: 'Address',
-            address: '서울시 마포구 양화로 123, 5층',
+            address: '서울특별시 마포구 양화로 176 동교동 와이즈파크 5층 (홍대입구역 8번 출구)',
             emailTitle: 'Email',
             hoursTitle: 'Hours',
             weekdays: '월-금 10:00 - 20:00',
@@ -1236,9 +1236,23 @@ export const translations = {
                 privacy: '개인정보처리방침',
                 pricing: '비급여 안내'
             },
-            copy: 'Renovo Hongdae Dermatology Clinic.',
-            rep: '대표자: 박홍필',
-            bizNum: '사업자등록번호: 123-45-67890'
+            copy: '벨아미리노보의원',
+            rep: '대표자: 박태훈',
+            bizNum: '사업자등록번호: 849-10-01039 | TEL: 02)3141-4282~3 | FAX: 02)3141-4289'
+        },
+        youtube: {
+            label: 'Hospital Introduction',
+            title1: '영상으로 만나는',
+            title2: '레노보홍 피부과',
+            desc: '직접 방문하기 전, 영상으로 먼저 만나보세요.',
+            popular: '인기동영상'
+        },
+        blog: {
+            title1: '피부 건강',
+            title2: '이야기',
+            viewAll: '블로그 전체보기',
+            readMore: '자세히 보기',
+            error: '블로그 글을 불러오지 못했습니다.'
         }
     },
     EN: {
@@ -2439,7 +2453,7 @@ export const translations = {
             title: 'Location & Inquiry',
             subtitle: 'Please make a reservation before visiting for a comfortable consultation.',
             addressTitle: 'Address',
-            address: '5F, 123 Yanghwa-ro, Mapo-gu, Seoul',
+            address: '5F, Wise Park, 176 Yanghwa-ro, Mapo-gu, Seoul (Exit 8, Hongik Univ. Station)',
             emailTitle: 'Email',
             hoursTitle: 'Hours',
             weekdays: 'Mon-Fri 10:00 - 20:00',
@@ -2478,9 +2492,23 @@ export const translations = {
                 privacy: 'Privacy Policy',
                 pricing: 'Pricing Guide'
             },
-            copy: 'Renovo Hongdae Dermatology Clinic.',
-            rep: 'Representative: Dr. Hongpil Park',
-            bizNum: 'Business License: 123-45-67890'
+            copy: 'Belle Amie Renovo Clinic',
+            rep: 'Representative: Dr. Taehun Park',
+            bizNum: 'Business License: 849-10-01039 | TEL: 02)3141-4282~3 | FAX: 02)3141-4289'
+        },
+        youtube: {
+            label: 'Hospital Introduction',
+            title1: 'Meet Us Through',
+            title2: 'Renovo Dermatology',
+            desc: 'Get a feel for our clinic before your visit.',
+            popular: 'Popular Videos'
+        },
+        blog: {
+            title1: 'Skin Health',
+            title2: 'Stories',
+            viewAll: 'View All Posts',
+            readMore: 'Read More',
+            error: 'Failed to load blog posts.'
         }
     },
     JP: {
@@ -3681,7 +3709,7 @@ export const translations = {
             title: 'アクセス & お問い合わせ',
             subtitle: '快適なカウンセリングのために、ご予約の上ご来院ください。',
             addressTitle: '住所',
-            address: 'ソウル市麻浦区楊花路123、5階',
+            address: 'ソウル特別市麻浦区楊花路176 東橋洞ワイズパーク5階（弘大入口駅8番出口）',
             emailTitle: 'メール',
             hoursTitle: '診療時間',
             weekdays: '月-金 10:00 - 20:00',
@@ -3720,9 +3748,23 @@ export const translations = {
                 privacy: '個人情報処理方針',
                 pricing: '非給与案内'
             },
-            copy: 'Renovo Hongdae Dermatology Clinic.',
-            rep: '代表: パク・ホンピル',
-            bizNum: '事業者登録番号: 123-45-67890'
+            copy: 'ベルアミリノボ医院',
+            rep: '代表: パク・テフン',
+            bizNum: '事業者登録番号: 849-10-01039 | TEL: 02)3141-4282~3 | FAX: 02)3141-4289'
+        },
+        youtube: {
+            label: 'Hospital Introduction',
+            title1: '映像でお会いする',
+            title2: 'レノボ皮膚科',
+            desc: '来院前に、まず映像でご確認ください。',
+            popular: '人気動画'
+        },
+        blog: {
+            title1: '肌の健康',
+            title2: 'ストーリー',
+            viewAll: 'ブログ全体を見る',
+            readMore: '詳しく見る',
+            error: 'ブログ記事を読み込めませんでした。'
         }
     }
 };
