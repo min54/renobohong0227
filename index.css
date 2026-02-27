@@ -1,0 +1,324 @@
+/* Global styles for Renovo Hongdae */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+
+:root {
+  --brand-light: #f5f3ff;
+  --brand-primary: #8b5cf6;
+  --brand-vibrant: #a78bfa;
+  --brand-deep: #7c3aed;
+  --brand-white: #ffffff;
+  --brand-bg: #ffffff;
+  --brand-text: #1f2937;
+
+  --teal-400: #8b5cf6;
+  /* Overriding teal to match soft purple brand */
+  --slate-900: #1f2937;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Treatment page HTML content styling */
+.treatment-content h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-top: 3.5rem;
+  margin-bottom: 1.1rem;
+  padding-bottom: 0.65rem;
+  border-bottom: 2px solid #ede9fe;
+}
+.treatment-content h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #4c1d95;
+  margin-top: 2rem;
+  margin-bottom: 0.65rem;
+}
+.treatment-content p {
+  font-size: 1.05rem;
+  color: #475569;
+  line-height: 2;
+  margin-bottom: 1.1rem;
+}
+.treatment-content ul {
+  margin: 1rem 0 1.5rem 0;
+  padding-left: 0;
+  list-style: none;
+}
+.treatment-content ul li {
+  font-size: 1.05rem;
+  color: #475569;
+  line-height: 1.85;
+  padding-left: 1.4rem;
+  position: relative;
+  margin-bottom: 0.75rem;
+}
+.treatment-content ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.6rem;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #8b5cf6;
+}
+.treatment-content strong {
+  color: #1e293b;
+  font-weight: 700;
+}
+.treatment-content details {
+  background: #ffffff;
+  border: 1px solid #ede9fe;
+  border-radius: 16px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  transition: box-shadow 0.2s;
+}
+.treatment-content details[open] {
+  box-shadow: 0 4px 20px rgba(139,92,246,0.08);
+  border-color: #c4b5fd;
+}
+.treatment-content summary {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 1.2rem 1.4rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #1e293b;
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+}
+.treatment-content summary::-webkit-details-marker { display: none; }
+.treatment-content summary::after {
+  content: '∨';
+  margin-left: auto;
+  font-size: 13px;
+  color: #a78bfa;
+  transition: transform 0.25s ease;
+}
+.treatment-content details[open] summary::after {
+  transform: rotate(180deg);
+}
+.treatment-content summary::before {
+  content: 'Q';
+  min-width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #8b5cf6;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.treatment-content details[open] summary {
+  color: #6d28d9;
+  border-bottom: 1px solid #ede9fe;
+}
+.treatment-content .answer {
+  display: flex;
+  gap: 12px;
+  padding: 1.2rem 1.4rem;
+  align-items: flex-start;
+}
+.treatment-content .answer::before {
+  content: 'A';
+  min-width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #f1f5f9;
+  color: #64748b;
+  font-size: 11px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.treatment-content .answer p {
+  margin: 0;
+  font-size: 1.05rem;
+  color: #475569;
+  line-height: 1.9;
+}
+
+/* ── Lead Text ── */
+.lead-text {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #1e293b;
+  line-height: 1.5;
+  margin: 0 0 1.5rem;
+  letter-spacing: -0.02em;
+}
+
+/* ── Stat Row ── */
+.stat-grid {
+  display: flex;
+  gap: 0;
+  margin: 1.5rem 0;
+  border: 1.5px solid #ede9fe;
+  border-radius: 18px;
+  overflow: hidden;
+}
+.stat-card {
+  flex: 1;
+  padding: 1.2rem 0.5rem;
+  text-align: center;
+  border-right: 1.5px solid #ede9fe;
+  background: #fff;
+}
+.stat-card:last-child { border-right: none; }
+.stat-number {
+  display: block;
+  font-size: 1.65rem;
+  font-weight: 800;
+  color: #7c3aed;
+  line-height: 1.15;
+}
+.stat-unit {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #a78bfa;
+}
+.stat-label {
+  display: block;
+  font-size: 0.75rem;
+  color: #94a3b8;
+  margin-top: 0.3rem;
+  font-weight: 500;
+}
+
+/* ── Benefit Grid ── */
+.benefit-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 1rem 0 1.75rem;
+}
+.benefit-card {
+  background: #fff;
+  border: 1.5px solid #ede9fe;
+  border-radius: 16px;
+  padding: 1.15rem 1.1rem;
+  transition: border-color 0.2s;
+}
+.benefit-card:hover { border-color: #c4b5fd; }
+.benefit-label {
+  display: inline-block;
+  background: #7c3aed;
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.22rem 0.65rem;
+  border-radius: 100px;
+  margin-bottom: 0.55rem;
+  letter-spacing: 0.04em;
+}
+.benefit-card p {
+  margin: 0;
+  font-size: 0.875rem;
+  color: #475569;
+  line-height: 1.7;
+}
+
+/* ── Tag Badges ── */
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0.75rem 0 1.25rem;
+}
+.tag {
+  background: #ede9fe;
+  color: #6d28d9;
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 0.35rem 0.9rem;
+  border-radius: 100px;
+  letter-spacing: 0.02em;
+}
+.tag-solid {
+  background: #7c3aed;
+  color: #fff;
+}
+
+/* ── Callout Box ── */
+.callout {
+  border-left: 3px solid #8b5cf6;
+  padding: 0.85rem 1.1rem;
+  background: #faf5ff;
+  border-radius: 0 14px 14px 0;
+  margin: 0.75rem 0 1.25rem;
+}
+.callout p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #4c1d95;
+  line-height: 1.85;
+}
+
+/* ── Section Divider ── */
+.divider {
+  height: 1px;
+  background: linear-gradient(to right, #ede9fe 60%, transparent);
+  margin: 1.75rem 0;
+}
+
+/* ── Step List ── */
+.step-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.75rem 0 1.25rem;
+  counter-reset: step-counter;
+}
+.step-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid #f1f5f9;
+  font-size: 0.95rem;
+  color: #475569;
+  line-height: 1.75;
+  counter-increment: step-counter;
+}
+.step-list li::before {
+  content: counter(step-counter);
+  min-width: 28px;
+  height: 28px;
+  background: #7c3aed;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 0.78rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
